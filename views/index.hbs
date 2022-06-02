@@ -1,0 +1,12 @@
+{{#if obj.admin}}
+    <h1>
+        {{#with obj}}
+            {{#with comments}}
+                {{comment}}<br>
+                {{date}}
+            {{/with}}
+        {{/with}}
+    </h1>
+{{else}}
+    <h1>Normal User</h1>
+{{/if}}
